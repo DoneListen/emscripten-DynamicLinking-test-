@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="./main.js"></script>
+<script>
+    Module = {};
+    // Module.onRuntimeInitialized = function() {
+    createModule({ dynamicLibraries: ['MyAdd.wasm'] }).then(function (module) {
+        Module = module;
+    });
+</script>
+</body>
+</html>
